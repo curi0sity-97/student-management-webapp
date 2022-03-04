@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang ="de">
+  <head>
+    <meta charset ="utf-8">
+    <meta name="viewport" content ="width=device-widht, initial-scale=1, shrink-to-fit=no">
+    <title>Listing available students</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+     integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!-- Eigenes CSS stylesheet -->
+     <link rel="stylesheet" href="style.css">
+  
+  </head>
+  <body>
+
+    <nav class="navbar sticky-top navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <img id="logo1" src="img/logo1.png" height="35" width="35"class="d-inline-block align-top" alt="">
+            Student Database
+          </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>     
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Frontpage <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="html/signin.html">Sign in</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Students
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="html/student1.html">Peter Schneider</a>
+                  <a class="dropdown-item disabled" href="#">Johannes Maier</a>
+                  <a class="dropdown-item disabled" href="#">Max Mustermann</a>
+                  <a class="dropdown-item disabled" href="#">Moritz Wagner</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item disabled" href="#">All Students</a>
+              </div>
+            </li>
+          </ul>
+          <ul class="navbar-nav">
+          <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Sign in Dropdown
+              </button>
+              <div class="dropdown-menu">
+                  <form class="px-4 py-3">
+                    <div class="form-group">
+                      <label for="exampleDropdownFormEmail1">Email address</label>
+                      <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleDropdownFormPassword1">Password</label>
+                      <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+                    </div>
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                      <label class="form-check-label" for="dropdownCheck">
+                        Remember me
+                      </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Sign in</button>
+                  </form>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="html/signin.html">New around here? Sign up</a>
+                  <a class="dropdown-item disabled" href="#">Forgot password?</a>
+                </div>          
+            </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+    </nav>
+ 
+    <p></p>
+    <h1>Here are all students listed</h1>
+    <h2>Use the navigation bar to switch between the sites</h2>
+   
+    <hr>
+    <nav class="nav justify-content-center">
+        <a class="nav-link active" href="#" tabindex="0" aria-current="page">Frontpage</a>
+        <a class="nav-link" href="html/signin.html">Sign in formular <span class="badge badge-secondary">New</span></a>
+        <a class="nav-link" href="html/student1.html" class="badge badge-secondary">Peter Schneider</a>
+        <a class="nav-link disabled" href="#">Johannes Maier</a>
+        <a class="nav-link disabled" href="#">Max Mustermann</a>
+        <a class="nav-link disabled" href="#">Moritz Wagner</a>
+      </nav>
+
+    <hr>
+    <div class="jumbotron">
+      <h1 class="display-4">Student database</h1>
+      <p class="lead">These sites allows registrating students and getting detailed information.</p>
+      <hr class="my-4">
+      <p>Become a member! You can sign in for free </p>
+      <a class="btn btn-primary btn-lg" href="html/signin.html" role="button">Sign in</a>
+    </div>
+    <hr>
+
+    <p><div class="btn-group btn-group-toggle" data-toggle="buttons">
+        <label class="btn btn-secondary active">
+          <input type="radio" name="options" id="option1" autocomplete="off" checked> 1. Semester
+        </label>
+        <label class="btn btn-secondary">
+          <input type="radio" name="options" id="option2" autocomplete="off"> 2. Semester
+        </label>
+        <label class="btn btn-secondary">
+          <input type="radio" name="options" id="option3" autocomplete="off"> 3. Semester
+        </label>
+      </div></p>
+
+    <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Sites
+    </button>
+      <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+        <a class="dropdown-item active" href="index.html">Frontpage</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="html/signin.html">Sign in formular</a>
+        <a class="dropdown-item" href="html/student1.html">Peter Schneider</a>
+        <a class="dropdown-item disabled" href="#">Overview Students</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="img/student.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Peter Schneider</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Hochschule München</h6>
+          <p class="card-text">Further information of the student. Open student page to see all details</p>
+          <a href="html/student1.html" class="btn btn-primary">Open Student</a>
+        </div>
+      </div>
+      <hr>
+      <p></p>
+            
+
+
+    <div class="list-group">
+      <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1">Frontpage</h5>
+          <small>10 days ago</small>
+        </div>
+        <p class="mb-1">Here all content and links can be found.</p>
+        <small>Overview</small>
+      </a>
+      <a href="#" class="list-group-item list-group-item-action flex-column align-items-start disabled">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1">Studend listing</h5>
+          <small class="text-muted">3 days ago</small>
+        </div>
+        <p class="mb-1">Get Access to all registered studens and see them in detail.</p>
+        <small class="text-muted">Data base</small>
+      </a>
+      <a href="html/signin/disclaimer.html" class="list-group-item list-group-item-action flex-column align-items-start">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1">Terms and conditions</h5>
+          <small class="text-muted">1 days ago</small>
+        </div>
+        <p class="mb-1">Before you sign in you have to read and agree our terms and conditions.</p>
+        <small class="text-muted">Disclaimer</small>
+      </a>
+    </div>
+
+    <p></p>
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+      <strong>Missing Student entry!</strong> <a href="html/signin.html" class="alert-link">Add student here</a> You should check if a student was already added.
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+  </div>
+
+
+      <!-- Bootstrap Test commands end -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+     integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+     integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
